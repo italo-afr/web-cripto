@@ -1,0 +1,44 @@
+.section-item:not(:last-child) { margin-block-end: 25px; }
+
+.section-item .title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-block-end: 15px;
+}
+
+.section-item .title-wrapper ion-icon {
+  flex-shrink: 0;
+  color: var(--azul);
+  font-size: 24px;
+}
+
+.app {
+    overflow: hidden;
+    padding-block-end: 0;
+}
+
+.app-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+}
+
+.app-banner {
+    position: relative;
+    margin-block-start: 60px;
+}
+
+.app-banner .span {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    color: var(--branco);
+    font-size: var(--fontsize-7);
+    font-weight: var(--fontw-700);
+    padding: 8px 15px;
+    border: 2px solid var(--branco);
+    border-radius: 50px;
+}
+

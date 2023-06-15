@@ -1,0 +1,84 @@
+.price {
+    background-color: var(--bg-1);
+    padding-block-end: 0;
+  }
+  
+  .price-tab {
+    background-color: var(--bg-2);
+    border: 1px solid var(--cinza-escuro);
+    border-radius: var(--radius-24);
+    padding: 20px;
+    box-shadow: var(--sombra-2);
+    margin-block-start: -160px;
+  }
+  
+  .price-tab .tab-nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-block-end: 20px;
+    margin-block-end: 20px;
+    border-block-end: 1px solid var(--cinza-escuro);
+  }
+  
+  .price-tab .tab-btn {
+    color: var(--branco);
+    font-size: var(--fontsize-7);
+    font-weight: var(--fontw-700);
+    padding: 7px 15px;
+    border-radius: 50px;
+    transition: var(--transition-1);
+  }
+  
+  .price-tab .tab-btn.active { background-color: var(--azul); }
+  
+  .price-tab .tab-content {
+    display: grid;
+    gap: 20px;
+  }
+  
+  .price-card {
+    padding: 20px;
+    border-radius: var(--radius-12);
+    transition: var(--transition-1);
+  }
+  
+  .price-card:is(:hover, .active) {
+    background-color: var(--cinzaazulado_50);
+    box-shadow: var(--sombra-3);
+  }
+  
+  .price-card .card-title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .price-card .card-title {
+    color: var(--branco);
+    font-size: var(--fontsize-7);
+    font-weight: var(--fontw-700);
+    transition: var(--transition-1);
+  }
+  
+  .price-card .card-title:is(:hover, :focus) { color: var(--azul); }
+  
+  .price-card .card-title .span {
+    color: var(--letras);
+    display: inline-block;
+    margin-inline-start: 5px;
+  }
+  
+  .price-card .card-value {
+    color: var(--branco);
+    font-size: var(--fontsize-3);
+    font-weight: var(--fontw-700);
+    margin-block: 10px;
+  }
+  
+  .price-card .card-analytics {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .price-card .current-price { font-size: var(--fontsize-7); }
